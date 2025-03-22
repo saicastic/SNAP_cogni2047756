@@ -1,5 +1,7 @@
 # Snap Syntax Event Submission
 
+![./assets/pam1.png]
+
 ## Explanation:
 
 ### structure :
