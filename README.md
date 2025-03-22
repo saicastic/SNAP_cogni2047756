@@ -1,8 +1,8 @@
-## Snap Syntax Event Submission
+# Snap Syntax Event Submission
 
-### Explanation:
+## Explanation:
 
-#### structure :
+### structure :
 
 This website consists of 6 sections :
 
