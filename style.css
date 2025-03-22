@@ -13,6 +13,7 @@ body {
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 26px;
   font-weight: 500;
+  transition: 0.4s ease-in;
 }
 
 img,
@@ -535,3 +536,22 @@ main {
   }
 }
 /* footer end  */
+
+body:has(.work-item:nth-child(1):hover) {
+  background: gray;
+}
+body:has(.work-item:nth-child(2):hover) {
+  background: green;
+}
+body:has(.work-item:nth-child(3):hover) {
+  background: pink;
+}
+body:has(.work-item:nth-child(4):hover) {
+  background: rgb(110, 162, 12);
+}
+body:has(.work-item:nth-child(5):hover) {
+  background: rgb(255, 194, 81);
+}
+body:has(.work-item:nth-child(6):hover) {
+  background: orange;
+}
