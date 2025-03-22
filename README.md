@@ -1,6 +1,6 @@
 # Snap Syntax Event Submission
 
-![./assets/pam1.png]
+![/assets/pam1.png](/assets/pam1.png)
 
 ## Explanation:
 
