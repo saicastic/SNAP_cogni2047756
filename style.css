@@ -11,6 +11,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: "PP Neue Montreal", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 img,
@@ -23,6 +25,11 @@ svg {
 a {
   color: black;
   text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: fit-content;
 }
 
 /* overlay design start  */
@@ -52,10 +59,78 @@ a {
   z-index: 80;
 }
 
-main {
-  width: 100%;
-  height: fit-content;
-  overflow-x: hidden;
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 400;
+  padding: 15px 0 17px;
+  display: grid;
+  gap: 0;
+  transition: background 0.5s;
+}
+
+.brand,
+.nav-link,
+.agency-info {
+  margin: 0;
+}
+
+.brand sup {
+  font-size: 10px;
+  position: relative;
+  top: -1.2em;
+}
+
+.nav-link {
+  text-align: right;
+}
+
+.agency-info {
+  display: none;
+}
+
+.tagline {
+  opacity: 0.2;
+}
+
+.phone-link {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .main-nav {
+    gap: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-nav {
+    grid-template-columns: calc(25% - 10px) calc(7% - 10px) calc(18% - 5px) calc(
+        50% - 5px
+      );
+  }
+
+  .agency-info {
+    display: block;
+    text-align: right;
+  }
+
+  .phone-link {
+    display: inline;
+  }
+}
+
+/* Assuming wrapper class styles */
+.main-nav {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* overlay design end  */
@@ -63,7 +138,7 @@ main {
 /* first section start  */
 .responsive-section {
   width: 100%;
-  max-width: 1200px; /* Assuming wrapper class has max-width */
+
   margin: 0 auto; /* Assuming wrapper centers content */
   padding: 0 1rem; /* Assuming wrapper has default padding */
   margin-top: 5rem;
@@ -76,7 +151,6 @@ main {
 @media (min-width: 1024px) {
   .responsive-section {
     padding-left: calc(50% + 5px);
-    padding-right: 12%;
   }
 }
 /* first section end */
@@ -152,6 +226,7 @@ main {
   position: relative;
   margin-top: 30px;
   display: grid;
+  padding: 0.5rem;
   gap: 10px;
 }
 
@@ -323,7 +398,6 @@ main {
 .services-section {
   margin-top: 20px;
   display: grid;
-  gap: 1rem; /* Default grid gap */
 }
 
 .section-heading,
@@ -366,7 +440,6 @@ main {
   text-align: center;
   padding: 50px 0 20px;
   display: grid;
-  gap: 15px;
 }
 
 .footer-logo {
